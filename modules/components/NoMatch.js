@@ -1,10 +1,11 @@
 import React from 'react'
 
-export default React.createClass({
+class NoMatch extends React.Component {
   render() {
     return (
       <div>404</div>
     )
   }
-})
+}
 
+export default NoMatch
