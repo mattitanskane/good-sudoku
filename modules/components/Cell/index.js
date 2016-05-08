@@ -1,11 +1,12 @@
 import React from 'react'
-import { header } from './styles.css'
-import Title from 'react-title-component'
+// import { header } from './styles.css'
 
-export default React.createClass({
+class Cell extends React.Component {
   render() {
     return (
       <td>Cell</td>
     )
   }
-})
+}
+
+export default Cell

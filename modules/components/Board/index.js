@@ -8,7 +8,7 @@ class Board extends React.Component {
     let cells = [];
     for (let i=0; i<81; i++)
     {
-      cells.push(<td key={i}>Solu {i}</td>);
+      cells.push(<Cell key={i} />);
     }
 
     return cells;

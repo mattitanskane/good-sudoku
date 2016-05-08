@@ -5,7 +5,7 @@ import Title from 'react-title-component'
 class Home extends React.Component {
 
   renderRow(row) {
-    return row.map((col, colIndex) => <div>{col}</div>)
+    return row.map((col, colIndex) => <div>{col}, {colIndex}</div>)
   }
 
   renderBoard() {
@@ -30,15 +30,15 @@ class Home extends React.Component {
 
 Home.defaultProps = {
   board: [
-    [0, 0, 1, 0, 0, 4, 0, 2, 0],
-    [0, 0, 1, 0, 0, 4, 0, 2, 0],
-    [0, 0, 1, 0, 0, 4, 0, 2, 0],
-    [0, 0, 1, 0, 0, 4, 0, 2, 0],
-    [0, 0, 1, 0, 0, 4, 0, 2, 0],
-    [0, 0, 1, 0, 0, 4, 0, 2, 0],
-    [0, 0, 1, 0, 0, 4, 0, 2, 0],
-    [0, 0, 1, 0, 0, 4, 0, 2, 0],
-    [0, 0, 1, 0, 0, 4, 0, 2, 0]
+    [ 0, 0, 1, 0, 0, 4, 0, 2, 0 ],
+    [ 0, 0, 1, 0, 0, 4, 0, 2, 0 ],
+    [ 0, 0, 1, 0, 0, 4, 0, 2, 0 ],
+    [ 0, 0, 1, 0, 0, 4, 0, 2, 0 ],
+    [ 0, 0, 1, 0, 0, 4, 0, 2, 0 ],
+    [ 0, 0, 1, 0, 0, 4, 0, 2, 0 ],
+    [ 0, 0, 1, 0, 0, 4, 0, 2, 0 ],
+    [ 0, 0, 1, 0, 0, 4, 0, 2, 0 ],
+    [ 0, 0, 1, 0, 0, 4, 0, 2, 0 ]
   ]
 }
 
