@@ -1,7 +1,7 @@
 import React from 'react'
 import Title from 'react-title-component'
 
-export default React.createClass({
+class App extends React.Component {
   render() {
     return (
       <div>
@@ -11,4 +11,6 @@ export default React.createClass({
       </div>
     )
   }
-})
+}
+
+export default App
