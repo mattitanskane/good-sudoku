@@ -6,13 +6,13 @@ import hello from './api/hello'
 import App from './components/App'
 import Home from './components/Home'
 import NoMatch from './components/NoMatch'
-import Dragon from './components/Dragon'
+import Board from './components/Board'
 
 export default (
   <Route>
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
-      <Route path="dragon" component={Dragon}/>
+      <Route path="board" component={Board}/>
     </Route>
     <ServerRoute path="/api">
       <ServerRoute path=":hello" get={hello}/>
