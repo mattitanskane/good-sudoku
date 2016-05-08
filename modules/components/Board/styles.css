@@ -2,3 +2,7 @@
   color: hsl(10, 50%, 50%);
 }
 
+.board {
+  width: 800px;
+  height: 800px;
+}
