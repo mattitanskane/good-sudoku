@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import Title from 'react-title-component'
 
-export default React.createClass({
+class Home extends React.Component {
   render() {
     return (
       <div>
@@ -14,6 +14,8 @@ export default React.createClass({
           <li><Link to="/dragon?level=4">Very hard</Link></li>
         </ul>
       </div>
-    );
+    )
   }
-});
+}
+
+export default Home
