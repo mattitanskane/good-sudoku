@@ -1,11 +1,22 @@
 import React from 'react'
-import { header } from './styles.css'
-import Title from 'react-title-component'
+const { number } = React.PropTypes
+import { cell } from './styles.css'
 
-export default React.createClass({
+class Cell extends React.Component {
   render() {
     return (
-      <td>Cell</td>
+      <div className={cell}>
+        {this.props.value}
+      </div>
     )
   }
-})
+}
+
+// Define the properties that this component requires
+Cell.propTypes = {
+  row: number.isRequired,
+  col: number.isRequired,
+  value: number
+}
+
+export default Cell
